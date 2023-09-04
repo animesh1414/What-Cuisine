@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url(Welcome_bg.jpg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(157, 163, 157, 0.3);
+    border-radius: 12px;
+    /*filter: blur(0%);*/
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  .brand-name{
+    color: rgb(245, 241, 241);
+  }
+
+  h2{
+    color: rgb(245, 241, 241);
+  }
+  
+  input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: rgba(157, 163, 157, 0.2);
+    color: white;
+    filter: blur(0.1px);
+  }
+  
+  input[type="submit"] {
+    background-color: #55ACEE;
+    width: 101%;
+    color: white;
+    cursor: pointer;
+  }
+  

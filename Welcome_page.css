@@ -1,0 +1,279 @@
+html{
+    scroll-behavior: smooth;
+}
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.h *{
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    margin-top: -18px;
+    /*background-color: black;*/
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url(vegetables-set-left-black-slate.jpg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    position: relative;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px indianred solid ;
+    transition: 0.2s linear;
+}
+.navbar a:hover:before{
+    width: 82%;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    background: rgba(205, 92, 92, 0.5);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+.Front-text{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.Front-text span{
+    letter-spacing: 5px;
+}
+.Front-text h1{
+    font-size: 3.5em;
+}
+.Front-text h2{
+    font-size: 4.5em;
+}
+.Front-text a{
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid indianred;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+}
+.Front-text a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+
+.abt-1{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url(vegetables-set-left-black-slate.jpg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.abt-1 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 350%);
+    font-size: 37px;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-1 h3{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 800%);
+    font-size: 27px;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-2{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(North-Indian-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-2 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+.abt-3{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(South-Indian-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-3 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+.abt-4{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(Italin-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-4 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+.abt-5{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(Chinese-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-5 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+.abt-6{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(Lebanese-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-6 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+.abt-7{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(Thai-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-7 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+/*.abt-8{
+    height: 100vh;
+  position: relative;
+}
+.abt-8 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 600%);
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+}*/
+video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .abt-8-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(0,0,0,0.9);
+  }
+  .home-content {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    color: #fff;
+    z-index: 3;
+  }
+  .home-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 37px;
+    text-align: center ;
+    transform: translate(0%, 150%);
+  }
+
+

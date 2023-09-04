@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url(vegetables-set-left-black-slate.jpg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .container {
+    width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: rgba(157, 163, 157, 0.3);
+    border-radius: 12px;
+    /*filter: blur(0%);*/
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  .brand-name{
+    color: rgb(245, 241, 241);
+  }
+
+  h2{
+    color: rgb(245, 241, 241);
+  }
+  
+  input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: rgba(157, 163, 157, 0.2);
+    color: white;
+    filter: blur(0.1px);
+  }
+  
+  input[type="submit"] {
+    background-color: transparent;
+    border: 1px solid indianred;
+    width: 101%;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s linear;
+  }
+  input[type="submit"]:hover {
+    background-color: rgba(205, 92, 92, 0.5);
+    border: 1px solid indianred;
+    width: 101%;
+    color: white;
+    cursor: pointer;
+  }
+  .seperator-text{
+    color: white;
+    transform: translate(-0%, -310%);
+    text-align: center;
+    top: -20px;
+  }
+.login-button a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: 50%;
+    left: 46.2%;
+    transform: translate(-50%, 530%); /* Adjusted the vertical translation */
+    background-color: rgba(205, 92, 92, 0.5);
+    border-radius: 8px;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+    transition: 0.2s linear;
+}
+
+.login-button a:hover {
+    background: transparent;
+    border: 1px solid indianred;
+}

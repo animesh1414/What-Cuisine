@@ -1,0 +1,557 @@
+--------------------------------------------------------------------------------Welcome_page.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to What Cuisine</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="stylesheet" type="text/css" href="Welcome_page.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                WHAT CUISINE
+            </div>
+            <div class="navbar">
+                <a href="about.html">About</a>
+                <a href="dive-in-page.html">Dive-in</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="register">
+                <a href="signup_page.html">Login/Sign-up</a>
+            </div>
+        </nav>
+        <section class="Front-text">
+            <h2>Everyday recipes getting boring?</h2>
+            <br>
+            <br>
+            <a href="dive-in-page.html">Discover something new</a>
+        </section>
+    </header>
+
+    <div class="abt-1">
+        <h1>Discover a wide variety of Cuisines from around the world</h1>
+        <h3>Make it the traditional way or add your own twist</h3>
+        <br>
+        <h3>Discover how others have enhanced a particular dish</h3>
+    </div>
+
+    <div class="abt-2"><h1><strong>From North Indian</strong></h1></div>
+
+    <div class="abt-3"><h1>to South Indian</h1></div>
+
+    <div class="abt-4"><h1>to Italian</h1></div>
+
+    <div class="abt-5"><h1><strong>Chinese</strong></h1></div>
+
+    <div class="abt-6"><h1>Lebanese</h1></div>
+
+    <div class="abt-7"><h1>Or Thai</h1></div>
+
+    <div class="abt-8">
+        <video autoplay muted loop>
+          <source src="edited chefs.mp4" type="video/mp4" />
+        </video>
+        <!--<div class="overlay"></div>-->
+        <div class="home-content">
+        <h1>Indulge yourself into mouth watering delicacies from around the world</h1>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+--------------------------------------------------------------------------------Welcome_page.css
+html{
+    scroll-behavior: smooth;
+}
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.h *{
+    font-family: "Montserrat", sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    margin-top: -18px;
+    /*background-color: black;*/
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url(vegetables-set-left-black-slate.jpg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Montserrat", sans-serif;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    font-size: 1.5em;
+    letter-spacing: 2px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    position: relative;
+}
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-bottom: 2px indianred solid ;
+    transition: 0.2s linear;
+}
+.navbar a:hover:before{
+    width: 82%;
+}
+.register a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 15px;
+    background: rgba(205, 92, 92, 0.5);
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.register a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+.Front-text{
+    max-width: 650px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+.Front-text span{
+    letter-spacing: 5px;
+}
+.Front-text h1{
+    font-size: 3.5em;
+}
+.Front-text h2{
+    font-size: 4.5em;
+}
+.Front-text a{
+    text-decoration: none;
+    background: transparent;
+    border: 1px solid indianred;
+    color: white;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+    letter-spacing: 5px;
+}
+.Front-text a:hover{
+    background: transparent;
+    border: 1px solid indianred;
+}
+
+
+.abt-1{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url(vegetables-set-left-black-slate.jpg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+.abt-1 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 350%);
+    font-size: 37px;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-1 h3{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 800%);
+    font-size: 27px;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-2{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(North-Indian-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-2 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+.abt-3{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(South-Indian-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-3 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+.abt-4{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(Italin-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-4 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+.abt-5{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(Chinese-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-5 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+.abt-6{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(Lebanese-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-6 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+.abt-7{
+    height: 100%;
+    background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(Thai-food-stock.jpeg);/*overlay effect*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+}
+.abt-7 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 450%);
+    font-size: 60px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 5px;
+}
+/*.abt-8{
+    height: 100vh;
+  position: relative;
+}
+.abt-8 h1{
+    color: white;
+    text-align: center;
+    transform: translate(0%, 600%);
+    font-size: 40px;
+    font-family: "Montserrat", sans-serif;
+}*/
+video {
+    object-fit: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+  }
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    background: rgba(0,0,0,0.9);
+  }
+  .home-content {
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    color: #fff;
+    z-index: 3;
+  }
+  .home-content h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 37px;
+    text-align: center ;
+    transform: translate(0%, 150%);
+  }
+
+
+
+
+--------------------------------------------------------------------------------login_page.html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Log in to Knowable</title>
+    <link rel="stylesheet" href="login_page.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="brand-name">Knowable</h1>
+        <h2>
+            <center>Log in</center>
+        </h2>
+        <form action="login.php" method="post">
+            <input type="email" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" value="Log in">
+        </form>
+    </div>
+</body>
+
+</html>
+
+--------------------------------------------------------------------------------login_page.css
+body {
+font-family: sans-serif;
+background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url(Welcome_bg.jpg);/*overlay effect*/
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+font-family: "Montserrat", sans-serif;
+}
+
+.container {
+width: 400px;
+margin: 100px auto;
+padding: 20px;
+background-color: rgba(157, 163, 157, 0.3);
+border-radius: 12px;
+/*filter: blur(0%);*/
+}
+
+h1 {
+text-align: center;
+}
+
+.brand-name{
+color: rgb(245, 241, 241);
+}
+
+h2{
+color: rgb(245, 241, 241);
+}
+
+input {
+width: 95%;
+padding: 10px;
+margin-bottom: 10px;
+border: 1px solid #ccc;
+border-radius: 6px;
+background: rgba(157, 163, 157, 0.2);
+color: white;
+filter: blur(0.1px);
+}
+
+input[type="submit"] {
+background-color: #55ACEE;
+width: 101%;
+color: white;
+cursor: pointer;
+}
+
+--------------------------------------------------------------------------------about.html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Knowable</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap">
+    <link rel="stylesheet" type="text/css" href="Welcome_page.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                KNOWABLE
+            </div>
+            <div class="navbar">
+                <a href="#">About</a>
+                <a href="#">Dive-in</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="register">
+                <a href="#">Login/Sign-up</a>
+            </div>
+        </nav>
+        <section class="Front-text">
+            <h2>This is Knowable's About</h2>
+        </section>
+    </header>
+</body>
+
+</html>
+
+--------------------------------------------------------------------------------about.css
+* {
+
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+
+}
+
+html,body{
+width: 100%;
+height: 100%;
+}
+
+header{
+width: 100%;
+height: 102.5%;
+margin-top: -18px;
+/*background-color: black;*/
+background-image:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.3)), url(Welcome_bg.jpg);/*overlay effect*/
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+font-family: "Montserrat", sans-serif;
+}
+nav{
+width: 100%;
+height: 100px;
+color: white;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.logo{
+font-size: 1.5em;
+letter-spacing: 2px;
+}
+.navbar a{
+text-decoration: none;
+color: white;
+padding: 10px 20px;
+font-size: 18px;
+position: relative;
+}
+.navbar a::before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 0;
+height: 100%;
+border-bottom: 2px indianred solid ;
+transition: 0.2s linear;
+}
+.navbar a:hover:before{
+width: 82%;
+}
+.register a{
+text-decoration: none;
+color: white;
+padding: 10px 20px;
+font-size: 15px;
+background: rgba(205, 92, 92, 0.5);
+border-radius: 8px;
+transition: 0.3s;
+}
+.register a:hover{
+background: transparent;
+border: 1px solid indianred;
+}
+.Front-text{
+max-width: 650px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: white;
+}
+.Front-text span{
+letter-spacing: 5px;
+}
+.Front-text h1{
+font-size: 3.5em;
+}
+.Front-text a{
+text-decoration: none;
+background: rgba(205, 92, 92, 0.5);
+color: white;
+font-size: 20px;
+border-radius: 8px;
+padding: 10px 20px;
+letter-spacing: 5px;
+}
+.Front-text a:hover{
+background: transparent;
+border: 1px solid indianred;
+}
